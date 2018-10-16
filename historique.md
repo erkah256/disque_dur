@@ -10,8 +10,7 @@ En guise de comparaison, les disques actuels possèdent souvent une capacité de
 
 
 ![](figures/ibm3340.png "Le disque dur IBM 3340 alias Winchester")
- 
-Figure 2 - Le disque dur IBM 3340 alias Winchester
+
 Dans les années suivantes, des améliorations sont apportées, avec entre autres l’utilisation de roulement à bille et l’apparition des premières têtes à base de ferrite. Grâce à ses innovations, le disque dur gagne en parts de marchés et remplace les technologies de stockage sur cassette utilisées à l’époque. 
 L’IBM 3340 sort en 1973. Il est constitué de deux plateaux de 30 Mo, ce qui qui lui a valu par analogie avec le fusil Winchester 30/30 le surnom de Winchester. L’appellation Winchester perdure de nos jours pour désigner le type de disque dur qui équipe nos PC.
 Les évolutions de 1975 à 1991
