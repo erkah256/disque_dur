@@ -2,6 +2,7 @@
 ## Au commencement
  
 ![](figures/ibm305.png) 
+
 ![](figures/plateau305.png)
 
 *Disque dur IBM 305 et un l’un de ses plateaux*
