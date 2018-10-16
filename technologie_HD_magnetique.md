@@ -2,13 +2,14 @@
  
 ![Image](figures/disque_dur_desosse.jpg)
 
-* Disque dur "disséqué" * 
+*Disque dur "disséqué"* 
 
 Le disque dur est contenu dans un boîtier étanche contenant une atmosphère protectrice destiné à éviter la présence de corps étrangers qui pourraient avoir un effet dévastateur sur le fonctionnement du dispositif.. Les principales parties constituant le disque dur sont :
--	les plateaux,
--	les têtes de lecture / écriture situées à l’extrémité d’un bras mobile,
--	la partie électronique, qui contient également le micrologiciel (firmware).
-Principe de lecture et écriture
+* les plateaux,
+*	les têtes de lecture / écriture situées à l’extrémité d’un bras mobile,
+*	la partie électronique, qui contient également le micrologiciel (firmware).
+
+# Principe de lecture et écriture
 
 Un disque magnétique est composé d’un ou plusieurs plateaux métalliques (autrefois en aluminium ou en zinc, et de plus en plus souvent en verre) recouverts sur l’un des faces (ou les deux) d’une matière magnétisable.  Les informations sont stockées dans des cellules correspondant chacune à un bit et dont l’orientation du champ magnétique indique s’il s’agit d’un « 0 » ou d’un « 1 ». Les opérations de lecture et écriture sont réalisées à l’aide d’une tête de lecture constituée d’un bobinage fer /nickel. 
  
@@ -22,7 +23,7 @@ Lors de l’écriture, un courant électrique est imposé dans le bobinage ce qu
 
 ![Image](figures/mvt_tetes.png)
  
-* Tête de lecture parcourant le disque *
+*Tête de lecture parcourant le disque*
 
 En fonctionnement, le disque tourne à une vitesse constante à une valeur allant généralement de 3 600 à 10 000 tr/mn voire 15 000 tr/min. Cette rotation est assurée par un moteur électrique autour d’un axe sur roulement à billes ou à huile. De leur côté les têtes de lecture décrivent un arc de cercle. Ainsi la combinaison de ces deux mouvements permet d’atteindre l’ensemble des données situées sur les surfaces réinscriptibles. 
 
@@ -32,7 +33,7 @@ Les têtes de lectures flottent au-dessus des plateaux en formant un coussin d�
  
 ![Image](figures/aterrissage.png)
  
-* "Atterrissage" des têtes sur le disque *
+*"Atterrissage" des têtes sur le disque*
 
 En cas d’entrée en contact d’une ou plusieurs têtes avec la surface des plateaux, il se produit un incident nommé « atterrissage » ayant généralement pour conséquence la destruction des données stockés sur la zone affectée. Du fat la faible distance entre la tête et le plateau, une impureté telle qu’une poussière aurait les mêmes conséquences fâcheuses. C’est pourquoi les disques durs sont assemblés en salle blanche et que leurs boîtiers sont scellés avec toute les précautions.
 
@@ -42,7 +43,7 @@ Les séquences de bits qui codent les informations stockées sont enregistrées 
 
 ![Image](figures/cylindres.png)
  
-* Cylindres d'un disque dur *
+*Cylindres d'un disque dur*
 
 L’ensemble des pistes situées à la même distance de l’axe sur les plateaux superposés forment ce qu’on appelle un cylindre. Historiquement, les secteurs d’un disque étaient repérés selon l’adressage CHS (abréviation de Cylinder/Head/Sector en anglais soit « Cylindre/Tête/Secteur » en français) aujourd’hui désuet (sauf lors du démarrage de l’ordinateur pour lire le MBR) du fait des limitations imposées sur la capacité (à environ 8 Go).
 
