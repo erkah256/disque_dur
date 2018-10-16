@@ -15,7 +15,7 @@ Un disque magnétique est composé d’un ou plusieurs plateaux métalliques (au
  
 ![Image](figures/lecture_ecriture.png)
 
-* Ecriture de donnée sur le disque dur *
+*Ecriture de donnée sur le disque dur*
 
 Lors de l’écriture, un courant électrique est imposé dans le bobinage ce qui produit une magnétisation de la surface du disque dur. Selon le sens de ce courant, on obtient un « 0 » ou un « 1 ». Réciproquement, lorsque la tête de lecture passe au-dessus d’un zone magnétisée, un courant est induit dans la bobine. Le sens du courant est différent selon la valeur « 0 » ou « 1 » du bit stocké.
   
