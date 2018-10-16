@@ -1,7 +1,7 @@
 # Historique du disque dur
 ## Au commencement
  
-![](figures/ibm305.png) 
+![](figures/ibm305.png =250x) 
 
 ![](figures/plateau305.png)
 
