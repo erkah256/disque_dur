@@ -3,9 +3,7 @@
  
 ![](figures/ibm305.png) 
 
-![](figures/plateau305.png)
-
-*Disque dur IBM 305 et un l’un de ses plateaux*
+*Disque dur IBM 305*
 Les disques durs ont une histoire de plus de 60 ans. Le tout premier disque dur a été créé en 1956 par IBM, avec l’IBM 305 qui équipait l’ordinateur 305 RAMAC « Random Access Method of Accounting and Control ».  Il était doté d’une capacité de 5 Mo répartie sur 50 plateaux, le tout pour une masse d’une tonne. Les données étaient alors échangées avec un débit de 8,8 ko/s. Malgré son coût de 50 000 $ US, un millier d’exemplaires se sont écoulés en 5 ans. 
 En guise de comparaison, les disques actuels possèdent souvent une capacité de 3 To à 4 To répartie sur des plateaux de 1 To, pour une masse inférieure à un kilogramme sur la balance. Les données sont échangées au rythme de 12 Gbits/s. Leur coût est l’ordre de la centaine d’euros.
 
