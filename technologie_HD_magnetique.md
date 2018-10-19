@@ -18,15 +18,26 @@ On peut répartir les consituants du disque dur magnétique en deux catégories:
   * moteurs,
   * interface de communication.
  
-# Stockage de l'information
+# Disposition des informations
 
 ![Image](figures/pistes.png)
 
 Un disque magnétique est composé d’un ou plusieurs plateaux métalliques (autrefois en aluminium ou en zinc, et de plus en plus souvent en verre) recouverts sur l’un des faces (ou les deux) d’une matière magnétisable. Les informations sont stockées dans des cellules correspondant chacune à un bit et dont l’orientation du champ magnétique indique s’il s’agit d’un « 0 » ou d’un « 1 ».
 
+Les séquences de bits qui codent les informations stockées sont enregistrées sur des pistes circulaires sur chaque plateau ( contrairement aux disques optiques disposant d'un piste unique en spirale). Chacune de ces pistes est formée de secteurs. Ces pistes sont découpées en secteurs. Un secteur en plus de contenir les données enregistrées comporte également à la fin et au début des informations utilisées par le contrôleur de disque pour se repérer, ainsi qu’une somme de contrôle pour détecter d’éventuelles erreurs. Les  secteurs sont délimités lors du formatage de base niveau réalisé en usine (ou avec un logiciel spécifique). Les capacités de stockage des secteurs sont fréquemment de 512 ou 1 024 octets.
+
+![Image](figures/cylindres.png)
+ 
+*Cylindres d'un disque dur*
+
+L’ensemble des pistes situées à la même distance de l’axe sur les plateaux superposés forment ce qu’on appelle un cylindre. Historiquement, les secteurs d’un disque étaient repérés selon l’adressage CHS (abréviation de Cylinder/Head/Sector en anglais soit « Cylindre/Tête/Secteur » en français) aujourd’hui désuet (sauf lors du démarrage de l’ordinateur pour lire le MBR) du fait des limitations imposées sur la capacité (à environ 8 Go).
+
+Les pistes étant concentriques, elles n’ont pas toutes la même longueur. Ceci a un impact sur le nombres de secteurs qui peut, selon le disque, être soit constant, soit augmenter à mesure que l‘on s’éloigne du centre du disque. Dans le premier cas, la densité d’enregistrement est plus élevée vers le centre du disque. Cependant, la vitesse angulaire étant constante, la tête de lecture voit passer autant de bits quelque soit sa distance avec le centre du disque. Dans le second cas, la quantité de données lues ou écrite est plus élevée vers le bord extérieur du disque. 
+
+
 ![Image](figures/secteur.png)
 
-Les informations sont disposées sous forme de piste concenttiques, contrairement aux disques optiques disposant d'un piste unique en spirale. Chacune de ces pistes est formée de secteurs. Le nombre de secteur est souvent le même pour chacune des pistes du plateau. Un secteur contient plusieurs zones (dans l'ordre) :
+Un secteur contient plusieurs zones (dans l'ordre) :
 1. une zone de "blanc" : il s'agit d'une zone inutilisée qui permet à la logique du contrôleur de basculer du mode lecteur au mode écriture et inversemement ; elle permet également de compenser de légères dérives de la vitesse de rotation des plateaux ;
 2. une zone "servo" : elle contient des informations permettant de synchroniser la logique du contrôleur de disque avec les données qui vont défiler sous la tête de lecture juste après ; 
 3. un en-tête : contient le numéro du bloc qui va suivre ce qui permet au contrôleur du disque de déterminer le numéro de secteur que la tête de lecture ou écrire, ainsi que de se recaler ;
@@ -60,18 +71,6 @@ Les têtes de lectures flottent au-dessus des plateaux en formant un coussin d�
 *"Atterrissage" des têtes sur le disque*
 
 En cas d’entrée en contact d’une ou plusieurs têtes avec la surface des plateaux, il se produit un incident nommé « atterrissage » ayant généralement pour conséquence la destruction des données stockés sur la zone affectée. Du fat la faible distance entre la tête et le plateau, une impureté telle qu’une poussière aurait les mêmes conséquences fâcheuses. C’est pourquoi les disques durs sont assemblés en salle blanche et que leurs boîtiers sont scellés avec toute les précautions.
-
-## Géométrie des disques durs
-
-Les séquences de bits qui codent les informations stockées sont enregistrées sur des pistes circulaires sur chaque plateau. Ces pistes sont découpées en secteurs. Un secteur en plus de contenir les données enregistrées comporte également à la fin et au début des informations utilisées par le contrôleur de disque pour se repérer, ainsi qu’une somme de contrôle pour détecter d’éventuelles erreurs. Les  secteurs sont délimités lors du formatage de base niveau réalisé en usine (ou avec un logiciel spécifique). Les capacités de stockage des secteurs sont fréquemment de 512 ou 1 024 octets.
-
-![Image](figures/cylindres.png)
- 
-*Cylindres d'un disque dur*
-
-L’ensemble des pistes situées à la même distance de l’axe sur les plateaux superposés forment ce qu’on appelle un cylindre. Historiquement, les secteurs d’un disque étaient repérés selon l’adressage CHS (abréviation de Cylinder/Head/Sector en anglais soit « Cylindre/Tête/Secteur » en français) aujourd’hui désuet (sauf lors du démarrage de l’ordinateur pour lire le MBR) du fait des limitations imposées sur la capacité (à environ 8 Go).
-
-Les pistes étant concentriques, elles n’ont pas toutes la même longueur. Ceci a un impact sur le nombres de secteurs qui peut, selon le disque, être soit constant, soit augmenter à mesure que l‘on s’éloigne du centre du disque. Dans le premier cas, la densité d’enregistrement est plus élevée vers le centre du disque. Cependant, la vitesse angulaire étant constante, la tête de lecture voit passer autant de bits quelque soit sa distance avec le centre du disque. Dans le second cas, la quantité de données lues ou écrite est plus élevée vers le bord extérieur du disque. 
 
 ## Temps d’accès à l’information
 
