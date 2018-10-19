@@ -25,13 +25,12 @@ On peut répartir les consituants du disque dur magnétique en deux catégories:
 Un disque magnétique est composé d’un ou plusieurs plateaux métalliques (autrefois en aluminium ou en zinc, et de plus en plus souvent en verre) recouverts sur l’un des faces (ou les deux) d’une matière magnétisable. Les informations sont stockées dans des cellules correspondant chacune à un bit et dont l’orientation du champ magnétique indique s’il s’agit d’un « 0 » ou d’un « 1 ».
 ![Image](figures/secteur.png)
 
-Les informations sont disposées sous forme de piste concenttiques, contrairement aux disques optiques disposant d'un piste unique en spirale. Chacune de ces pistes est formée de secteurs. Le nombre de secteur est souvent le même pour chacune des pistes du plateau. Un secteur contient plusieurs zones :
-* des données utiles (512 à 1 024 octets)
-* une zone de "blanc" (rattrapage dérives, passage lecture/écriture) : il s'agit d'une zone inutilisée qui permet à la logique du contrôleur de basculer du mode lecteur au mode écriture et inversemement ; elle permet également de compenser de légères dérives de la vitesse de rotation des plateaux ;
-* un en-tête avec numéro du bloc
-* une somme de contrôle : 
-
-
+Les informations sont disposées sous forme de piste concenttiques, contrairement aux disques optiques disposant d'un piste unique en spirale. Chacune de ces pistes est formée de secteurs. Le nombre de secteur est souvent le même pour chacune des pistes du plateau. Un secteur contient plusieurs zones (dans l'ordre) :
+1. une zone de "blanc" : il s'agit d'une zone inutilisée qui permet à la logique du contrôleur de basculer du mode lecteur au mode écriture et inversemement ; elle permet également de compenser de légères dérives de la vitesse de rotation des plateaux ;
+2. une zone "servo" : elle contient des informations permettant de synchroniser la logique du contrôleur de disque avec les données qui vont défiler sous la tête de lecture juste après ; 
+3. un en-tête : contient le numéro du bloc qui va suivre ce qui permet au contrôleur du disque de déterminer le numéro de secteur que la tête de lecture ou écrire, ainsi que de se recaler ;
+4. les données utiles (512 à 1 024 octets) : ce sont celles stockées par l'utiliateur ;
+5. une somme de contrôle : elle permet de détecter les erreurs.
 
 # Principe de lecture et écriture
 
