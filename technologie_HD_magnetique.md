@@ -73,7 +73,10 @@ Un secteur contient plusieurs zones (dans l'ordre) :
 4. les données utiles (512 à 1 024 octets) : ce sont celles stockées par l'utiliateur ;
 5. une somme de contrôle : elle permet de détecter les erreurs.
 
-## Principe de lecture et écriture
+## Lecture et écriture
+
+### Principe de fonctionnement des têtes
+
 
 Les informations sont stockées dans des cellules correspondant chacune à un bit et dont l’orientation du champ magnétique indique s’il s’agit d’un « 0 » ou d’un « 1 ». Les opérations de lecture et écriture sont réalisées à l’aide d’une tête de lecture constituée d’un bobinage fer /nickel. 
  
