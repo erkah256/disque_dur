@@ -7,24 +7,31 @@
 Le disque dur est contenu dans un boîtier étanche contenant une atmosphère protectrice destiné à éviter la présence de corps étrangers qui pourraient avoir un effet dévastateur sur le fonctionnement du dispositif.
 On peut répartir les consituants du disque dur magnétique en deux catégories: 
 * les éléments mécaniques :
- * plateaux magnétisés,
- * têtes de lecture (situées sur un bras mobile),
- * boîtier scellé,
+  * plateaux magnétisés,
+  * têtes de lecture (situées sur un bras mobile),
+  * boîtier scellé,
 
 * les composants électriques :
- * alimentation,
- * contrôleur de disque dur,
- * mémoire cache,
- * moteurs,
- * interface de communication.
+  * alimentation,
+  * contrôleur de disque dur,
+  * mémoire cache,
+  * moteurs,
+  * interface de communication.
  
 # Stockage de l'information
 
-![Image](figures/disque_dur_desosse.jpg)
+![Image](figures/pistes.png)
 
 Un disque magnétique est composé d’un ou plusieurs plateaux métalliques (autrefois en aluminium ou en zinc, et de plus en plus souvent en verre) recouverts sur l’un des faces (ou les deux) d’une matière magnétisable. Les informations sont stockées dans des cellules correspondant chacune à un bit et dont l’orientation du champ magnétique indique s’il s’agit d’un « 0 » ou d’un « 1 ».
+![Image](figures/secteur.png)
 
-Les informations sont disposées sous forme de piste concenttiques, contrairement aux disques optiques disposant d'un piste unique en spirale. Chacune de ces pistes est formée de secteurs.
+Les informations sont disposées sous forme de piste concenttiques, contrairement aux disques optiques disposant d'un piste unique en spirale. Chacune de ces pistes est formée de secteurs. Le nombre de secteur est souvent le même pour chacune des pistes du plateau. Un secteur contient plusieurs zones :
+* des données utiles (512 à 1 024 octets)
+* une zone de "blanc" (rattrapage dérives, passage lecture/écriture)
+* un en-tête avec numéro du bloc
+* une somme de contrôle (détection d’erreurs)
+
+
 
 # Principe de lecture et écriture
 
