@@ -1,4 +1,33 @@
 # Fonctionnement physique du disque dur
+
+
+## Un peu d'histoire
+
+### Au commencement
+ 
+![](figures/ibm305.png) 
+
+*Disque dur IBM 305*
+
+Les disques durs ont une histoire de plus de 60 ans. Le tout premier disque dur a été créé en 1956 par IBM, avec l’IBM 305 qui équipait l’ordinateur 305 RAMAC « Random Access Method of Accounting and Control ».  Il était doté d’une capacité de 5 Mo répartie sur 50 plateaux, le tout pour une masse d’une tonne. Les données étaient alors échangées avec un débit de 8,8 ko/s. Malgré son coût de 50 000 $ US, un millier d’exemplaires se sont écoulés en 5 ans. 
+En guise de comparaison, les disques actuels possèdent souvent une capacité de 3 To à 4 To répartie sur des plateaux de 1 To, pour une masse inférieure à un kilogramme sur la balance. Les données sont échangées au rythme de 12 Gbits/s. Leur coût est l’ordre de la centaine d’euros.
+
+### Les premières évolutions
+
+
+![](figures/ibm3340.png)
+
+*Le disque dur IBM 3340 alias Winchester*
+
+Dans les années suivantes, des améliorations sont apportées, avec entre autres l’utilisation de roulement à bille et l’apparition des premières têtes à base de ferrite. Grâce à ses innovations, le disque dur gagne en parts de marchés et remplace les technologies de stockage sur cassette utilisées à l’époque. 
+L’IBM 3340 sort en 1973. Il est constitué de deux plateaux de 30 Mo, ce qui qui lui a valu par analogie avec le fusil Winchester 30/30 le surnom de Winchester. L’appellation Winchester perdure de nos jours pour désigner le type de disque dur qui équipe nos PC.
+
+### Les évolutions de 1975 à 1991
+
+Afin d’améliorer les temps d’accès des disques durs, les fabricants ont cherché à réduire la distance entre le plateau et la tête. NE 1979, cette distance était de 330 nanomètres, et atteignait une dizaine de nanomètres vers 2006. Dans le même temps, les taille des plateaux ont diminué. Les plateaux des disques du RAMAC mesuraient 24 pouces. EN 1979 cette taille est passée à 8 pouces, soit environ 20 centimètres. Cette miniaturisation a permis l’intégration du disque dur dans des systèmes plus petits. Ce support de stockage était réservé aux ordinateurs centrales, dits mainframe. Le premier micro-ordinateur commercialisé par IBM en 1975 ne comportait pas de disque dur. Ce n’est qu’en 1983 qu’un premier PC sera pourvu d’un disque dur.
+
+
+## Les principaux composants du disque dur magnétique
  
 ![Image](figures/disque_dur_desosse.jpg)
 
@@ -18,7 +47,7 @@ On peut répartir les consituants du disque dur magnétique en deux catégories:
   * moteurs,
   * interface de communication.
  
-# Disposition des informations
+## Disposition des informations
 
 ![Image](figures/pistes.png)
 
@@ -44,7 +73,7 @@ Un secteur contient plusieurs zones (dans l'ordre) :
 4. les données utiles (512 à 1 024 octets) : ce sont celles stockées par l'utiliateur ;
 5. une somme de contrôle : elle permet de détecter les erreurs.
 
-# Principe de lecture et écriture
+## Principe de lecture et écriture
 
 Les informations sont stockées dans des cellules correspondant chacune à un bit et dont l’orientation du champ magnétique indique s’il s’agit d’un « 0 » ou d’un « 1 ». Les opérations de lecture et écriture sont réalisées à l’aide d’une tête de lecture constituée d’un bobinage fer /nickel. 
  
@@ -54,7 +83,7 @@ Les informations sont stockées dans des cellules correspondant chacune à un bi
 
 Lors de l’écriture, un courant électrique est imposé dans le bobinage ce qui produit une magnétisation de la surface du disque dur. Selon le sens de ce courant, on obtient un « 0 » ou un « 1 ». Réciproquement, lorsque la tête de lecture passe au-dessus d’un zone magnétisée, un courant est induit dans la bobine. Le sens du courant est différent selon la valeur « 0 » ou « 1 » du bit stocké.
   
-## Mouvements des têtes
+### Mouvements des têtes
 
 ![Image](figures/mvt_tetes.png)
  
@@ -72,7 +101,7 @@ Les têtes de lectures flottent au-dessus des plateaux en formant un coussin d�
 
 En cas d’entrée en contact d’une ou plusieurs têtes avec la surface des plateaux, il se produit un incident nommé « atterrissage » ayant généralement pour conséquence la destruction des données stockés sur la zone affectée. Du fat la faible distance entre la tête et le plateau, une impureté telle qu’une poussière aurait les mêmes conséquences fâcheuses. C’est pourquoi les disques durs sont assemblés en salle blanche et que leurs boîtiers sont scellés avec toute les précautions.
 
-## Temps d’accès à l’information
+### Temps d’accès à l’information
 
 Afin de lire ou écrire une information enregistrée sur le disque, il faut tout d’abord commencer par placer la tête sur la bonne piste. Ensuite, le temps de positionnement sur le bon secteur est variable : dans le meilleur des cas, la tête est déjà situé sur le début du secteur et dans le pire elle doit attendre un tour complet du disque. En moyenne, cette durée correspond à celle nécessaire pour que le disque réalise un demi-tour. Enfin, on peut lire ou écrire le contenu. La durée de cette tâche est caractérisé par la vitesse de transfert de l’information ou débit. Celle-ci correspond à la quantité d’information défilant devant la tête par unité de temps, et donc de la densité d’enregistrement et de la vitesse de rotation du disque. 
 Il apparaît clairement que pour avoir des durées d’écriture ou de lectures rapides, il est nécessaire que les données soient proches les unes des autres.  C’est l’utilité de l’opération de défragmentation qui consiste à utiliser un logiciel permettant de réorganiser le disque de telle manière que les données soient placées sur des secteurs contiguës.
