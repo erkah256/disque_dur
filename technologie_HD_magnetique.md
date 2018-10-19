@@ -117,5 +117,5 @@ Le contrôleur est en quelque sorte le cerveau du disque dur. Il commande les mo
 
 ## Les interfaces /bus
 
-ATA : nécessité de définir un maître et un esclave
+Aujourd'hu
 
