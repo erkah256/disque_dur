@@ -117,5 +117,11 @@ Le contrôleur est en quelque sorte le cerveau du disque dur. Il commande les mo
 
 ## Les interfaces /bus
 
-Pour communiquer avec le reste de l'ordinateur, et en particulier le processeur, le disque dur utilise une interface.  Différents types d'interface existent ou ont existé. Actuellement, les plus courantes pour une usage domestique sont le SATA pour les disques internes et l'USB pour les disques externes. On peut également citer le SCSI (Small Computer System Interface) qui du fait de son prix est plutôt réservé à un usage profesionnel, ainsi que le Firewire pour les dispositifs externes, mais qui semble en perte de vitesse.
+Pour communiquer avec le reste de l'ordinateur, et en particulier le processeur, le disque dur utilise une interface.  Différents types d'interface existent ou ont existé.Actuellement, les plus courantes pour une usage domestique sont le SATA (Serial Advanced Technology Attachment) pour les disques internes et l'USB (Universal Serial Bus) pour les disques externes. On peut également citer le SCSI (Small Computer System Interface) qui du fait de son prix est plutôt réservé à un usage profesionnel, ainsi que le Firewire pour les dispositifs externes, mais qui semble en perte de vitesse.
+
+Comme leurs noms l'indiquent, le SATA et l'USB sont des bus série. Le SATA qui est apparu vers 2003 a succédé au PATA (Parallel ATA), plus connu sous le nom de IDE (Integrated Drive Electronics). Cette ancienne interface permettait d'atteindre dans ses toutes dernières version (Ultra DMA) des vitesses théoriques de 100 Mo/s ) 133 Mo/s. Jusqu'à deux périphériques pouvaient être branchés sur une même nappe et relié sur le même connecteur. Dans ce cas, l'un d'entre eux devait être configuré en maître et l'autre en esclave. Ce principe a été abandonné par SATA, qui dans sa version III  permet d'atteindre une vitesse théorique de 6 Gbits/s.
+
+Les dernières versions de l'USB (30 et 3.1) permettent d'atteindre en théorie des vitesses de 5 à 10 Gbits/s, contre 480 Mbits/s pour la version 2.
+
+Une version externe de SATA, nommée eSATA (external SATA) a existé, mais ne semble plus proposée, du fait de la conccurence de l'USB 3, plus performant.
 
