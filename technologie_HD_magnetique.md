@@ -27,9 +27,9 @@ Un disque magnétique est composé d’un ou plusieurs plateaux métalliques (au
 
 Les informations sont disposées sous forme de piste concenttiques, contrairement aux disques optiques disposant d'un piste unique en spirale. Chacune de ces pistes est formée de secteurs. Le nombre de secteur est souvent le même pour chacune des pistes du plateau. Un secteur contient plusieurs zones :
 * des données utiles (512 à 1 024 octets)
-* une zone de "blanc" (rattrapage dérives, passage lecture/écriture)
+* une zone de "blanc" (rattrapage dérives, passage lecture/écriture) : il s'agit d'une zone inutilisée qui permet à la logique du contrôleur de basculer du mode lecteur au mode écriture et inversemement ; elle permet également de compenser de légères dérives de la vitesse de rotation des plateaux ;
 * un en-tête avec numéro du bloc
-* une somme de contrôle (détection d’erreurs)
+* une somme de contrôle : 
 
 
 
