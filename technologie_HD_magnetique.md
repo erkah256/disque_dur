@@ -4,14 +4,31 @@
 
 *Disque dur "disséqué"* 
 
-Le disque dur est contenu dans un boîtier étanche contenant une atmosphère protectrice destiné à éviter la présence de corps étrangers qui pourraient avoir un effet dévastateur sur le fonctionnement du dispositif.. Les principales parties constituant le disque dur sont :
-* les plateaux,
-*	les têtes de lecture / écriture situées à l’extrémité d’un bras mobile,
-*	la partie électronique, qui contient également le micrologiciel (firmware).
+Le disque dur est contenu dans un boîtier étanche contenant une atmosphère protectrice destiné à éviter la présence de corps étrangers qui pourraient avoir un effet dévastateur sur le fonctionnement du dispositif.
+On peut répartir les consituants du disque dur magnétique en deux catégories: 
+* les éléments mécaniques :
+ * plateaux magnétisés,
+ * têtes de lecture (situées sur un bras mobile),
+ * boîtier scellé,
+
+* les composants électriques :
+ * alimentation,
+ * contrôleur de disque dur,
+ * mémoire cache,
+ * moteurs,
+ * interface de communication.
+ 
+# Stockage de l'information
+
+![Image](figures/disque_dur_desosse.jpg)
+
+Un disque magnétique est composé d’un ou plusieurs plateaux métalliques (autrefois en aluminium ou en zinc, et de plus en plus souvent en verre) recouverts sur l’un des faces (ou les deux) d’une matière magnétisable. Les informations sont stockées dans des cellules correspondant chacune à un bit et dont l’orientation du champ magnétique indique s’il s’agit d’un « 0 » ou d’un « 1 ».
+
+Les informations sont disposées sous forme de piste concenttiques, contrairement aux disques optiques disposant d'un piste unique en spirale. Chacune de ces pistes est formée de secteurs.
 
 # Principe de lecture et écriture
 
-Un disque magnétique est composé d’un ou plusieurs plateaux métalliques (autrefois en aluminium ou en zinc, et de plus en plus souvent en verre) recouverts sur l’un des faces (ou les deux) d’une matière magnétisable.  Les informations sont stockées dans des cellules correspondant chacune à un bit et dont l’orientation du champ magnétique indique s’il s’agit d’un « 0 » ou d’un « 1 ». Les opérations de lecture et écriture sont réalisées à l’aide d’une tête de lecture constituée d’un bobinage fer /nickel. 
+ Les informations sont stockées dans des cellules correspondant chacune à un bit et dont l’orientation du champ magnétique indique s’il s’agit d’un « 0 » ou d’un « 1 ». Les opérations de lecture et écriture sont réalisées à l’aide d’une tête de lecture constituée d’un bobinage fer /nickel. 
  
 ![Image](figures/lecture_ecriture.png)
 
