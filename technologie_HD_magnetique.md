@@ -117,5 +117,5 @@ Le contrôleur est en quelque sorte le cerveau du disque dur. Il commande les mo
 
 ## Les interfaces /bus
 
-Aujourd'hu
+Pour communiquer avec le reste de l'ordinateur, et en particulier le processeur, le disque dur utilise une interface.  Différents types d'interface existent ou ont existé. Actuellement, les plus courantes pour une usage domestique sont le SATA pour les disques internes et l'USB pour les disques externes. On peut également citer le SCSI (Small Computer System Interface) qui du fait de son prix est plutôt réservé à un usage profesionnel, ainsi que le Firewire pour les dispositifs externes, mais qui semble en perte de vitesse.
 
