@@ -23,6 +23,7 @@ On peut répartir les consituants du disque dur magnétique en deux catégories:
 ![Image](figures/pistes.png)
 
 Un disque magnétique est composé d’un ou plusieurs plateaux métalliques (autrefois en aluminium ou en zinc, et de plus en plus souvent en verre) recouverts sur l’un des faces (ou les deux) d’une matière magnétisable. Les informations sont stockées dans des cellules correspondant chacune à un bit et dont l’orientation du champ magnétique indique s’il s’agit d’un « 0 » ou d’un « 1 ».
+
 ![Image](figures/secteur.png)
 
 Les informations sont disposées sous forme de piste concenttiques, contrairement aux disques optiques disposant d'un piste unique en spirale. Chacune de ces pistes est formée de secteurs. Le nombre de secteur est souvent le même pour chacune des pistes du plateau. Un secteur contient plusieurs zones (dans l'ordre) :
@@ -34,7 +35,7 @@ Les informations sont disposées sous forme de piste concenttiques, contrairemen
 
 # Principe de lecture et écriture
 
- Les informations sont stockées dans des cellules correspondant chacune à un bit et dont l’orientation du champ magnétique indique s’il s’agit d’un « 0 » ou d’un « 1 ». Les opérations de lecture et écriture sont réalisées à l’aide d’une tête de lecture constituée d’un bobinage fer /nickel. 
+Les informations sont stockées dans des cellules correspondant chacune à un bit et dont l’orientation du champ magnétique indique s’il s’agit d’un « 0 » ou d’un « 1 ». Les opérations de lecture et écriture sont réalisées à l’aide d’une tête de lecture constituée d’un bobinage fer /nickel. 
  
 ![Image](figures/lecture_ecriture.png)
 
