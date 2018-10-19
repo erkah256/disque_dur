@@ -115,7 +115,7 @@ Contrôleur
 
 Le contrôleur est en quelque sorte le cerveau du disque dur. Il commande les moteurs de rotation et positionne les têtes de lecture et enregistrement. Il assure également l’interface avec le bus en convertissant les signaux reçus des têtes en données exploitables, ou en enregistrement à un emplacement particulier de la surface des plateaux les données provenant du bus.
 
-## Les interfaces /bus
+## Les interfaces / bus
 
 Pour communiquer avec le reste de l'ordinateur, et en particulier le processeur, le disque dur utilise une interface.  Différents types d'interface existent ou ont existé.Actuellement, les plus courantes pour une usage domestique sont le SATA (Serial Advanced Technology Attachment) pour les disques internes et l'USB (Universal Serial Bus) pour les disques externes. On peut également citer le SCSI (Small Computer System Interface) qui du fait de son prix est plutôt réservé à un usage profesionnel, ainsi que le Firewire pour les dispositifs externes, mais qui semble en perte de vitesse.
 
