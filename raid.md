@@ -8,7 +8,7 @@ Il existe plusieurs modes RAID qui diffèrent dans leur façon d'utiliser les di
 
 ## Modes « simples » : 0 et 1
 
-![](figures/raid0.png =250x) 
+![](figures/raid0.png =100x20) 
 
 *RAID 0*
 
