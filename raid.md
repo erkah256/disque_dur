@@ -6,6 +6,8 @@ Le RAID (Redundant Array of Independent Disks) est une technologie dont le but e
 
 Il existe plusieurs modes RAID qui diffèrent dans leur façon d'utiliser les différents disques constituant le grappe de stockage, ce qui immplique des performances différentes. Dans ce qui suit, nous allons aborder certains de ces modes et en présenter leurs principales caractéristiques.
 
+## Modes « simples » : 0 et 1
+
 
 
 
