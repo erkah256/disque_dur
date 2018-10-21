@@ -8,6 +8,25 @@ Il existe plusieurs modes RAID qui diffèrent dans leur façon d'utiliser les di
 
 ## Modes « simples » : 0 et 1
 
+![](figures/raid0) 
+
+*RAID 0*
+
+![](figures/raid1) 
+
+*RAID 1*
+
+## Modes « composites »
+
+![](figures/raid0p1) 
+
+*RAID 0+1*
+
+![](figures/raid1p0) 
+
+*RAID 1+0*
 
 
+## Un compromis : RAID 5
 
+![](figures/raid5) 
