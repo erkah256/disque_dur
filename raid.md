@@ -51,6 +51,6 @@ Les débits sont multpliés par *m* et la taille des données stockables corresp
 
 Le RAID 5 permet d'atteindre un certain compromis sur les aspects fiabilité et performances pour des coûts raisonnables. Ce mode reprend le principe des bandes du RAID 0, en y ajoutant des bandes supplémentaires de parité. Sur l'exemple illustré par la figure ci-dessus, les bandes Ap, Bp, Cp et Dp sont de telles bandes. En cas de perte du disque 3, il est possible de le remplacer par un nouveau disque. Les données des bandes B3, C3 et D3 sont alors reconstitués grâce aux bandes de parité Bp, Cp et Dp.
 
-Dans une grappe RAID 5 de *n* disques, les débits sont multipliés par *n-1* et l'espace de stockage acessible correspond à celui de *n-1* disques. Pour perdre l'ensemble des données, il faut perdre deux disques.
+Dans une grappe RAID 5 de *n* disques, les débits sont multipliés par *n-1* et l'espace de stockage acessible correspond à celui de *n-1* disques. Le perte de l'ensemble des données du système est provoquée par la défaillance d'au moins deux disques.
 
 
