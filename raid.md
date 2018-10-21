@@ -14,7 +14,7 @@ Pour simplifier, on considérera que tous les disques utilisés ont la même tai
 
 *RAID 0*
 
-Le mode RAID 0 consisite à utiliser en parallèle l'ensemble des disques de la grappe de stockage lors des opérations de lecture et d'écriture afin d'augmenter les débits. On parle d'agrégation de données par bande. Chaque fichier est découpé en plusieurs bandes qui sont répartis sur les différents disques constituant la grappe.Ainsi, sur l'exemple illustré par la figure ci-dessus, les bandes A1, A3, A5 et A7 sont copiés sur le disque 0 pendant que les bandes A2, A4, A6 et A8 le sont sur le disque 1.
+Le mode RAID 0 consisite à utiliser en parallèle l'ensemble des disques de la grappe de stockage lors des opérations de lecture et d'écriture afin d'augmenter les débits. On parle d'agrégation de données par bande. Chaque fichier est découpé en plusieurs bandes qui sont répartis sur les différents disques constituant la grappe.Ainsi, sur l'exemple illustré par la figure ci-dessus, les bandes A1, A3, A5 et A7 sont copiées sur le disque 0 pendant que les bandes A2, A4, A6 et A8 le sont sur le disque 1.
 
 Les débit sont multipliés par *n*, le nombre de disques. La capacité totale utilisable est la somme des capacités des disqques.
 Le principal inconvénient de ce mode RAID est sa sensibilité aux défaillances. En effet, la perte d'un disque entraîne la perte de la totalité des données du RAID.
@@ -27,13 +27,19 @@ On parle de disque en mirroir pour décire le mode 1. En effet, dans ce mode les
 
 ## Modes « composites »
 
+Il est possible de combiner les modes précédents afin d'atteindre une augmentation simultanées des débits et de la fiabilité.
+
 ![](figures/raid0p1.png) 
 
 *RAID 0+1*
 
+Dans le mode 0+1, on dispose de *m* grappes RAID 0 consituées chacune de *n* disques, et placées sous la supervision d'un contrôleur RAID 1. Les débits sont multipliés par *m* tandis que la perte de la grappe est causée par la perte d'au moins un disque dans chacune des *m* grappes RAID 0. L'espace de stockage visible par l'utilisateur correspond à celui d'une grappe RAID 0, c'est à dire le contenu de *n* disques.
+
 ![](figures/raid1p0.png) 
 
 *RAID 1+0*
+
+
 
 
 ## Un compromis : RAID 5
