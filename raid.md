@@ -6,11 +6,18 @@ Le RAID (Redundant Array of Independent Disks) est une technologie dont le but e
 
 Il existe plusieurs modes RAID qui diffèrent dans leur façon d'utiliser les différents disques constituant le grappe de stockage, ce qui immplique des performances différentes. Dans ce qui suit, nous allons aborder certains de ces modes et en présenter leurs principales caractéristiques.
 
+Pour simplifier, on considérera que tous les disques utilisés ont la même taille.
+
 ## Modes « simples » : 0 et 1
 
 ![](figures/raid0.png)
 
 *RAID 0*
+
+Le mode RAID 0 consisite à utiliser en parallèle l'ensemble des disques de la grappe de stockage lors des opérations de lecture et d'écriture afin d'augmenter les débits. On parle d'agrégation de données par bande. Chaque fichier est découpé en plusieurs bandes qui sont répartis sur les différents disques constituant la grappe.Ainsi, sur l'exemple illustré par la figure ci-dessus, les bandes A1, A3, A5 et A7 sont copiés sur le disque 0 pendant que les bandes A2, A4, A6 et A8 le sont sur le disque 1.
+
+Les débit sont multipliés par *n*, le nombre de disques. La capacité totale utilisable est la somme des capacités des disqques.
+Ce mode RAID est sensible aux défaillances. En effet, la perte d'un disque entraîne la perte de la totalité des données du RAID.
 
 ![](figures/raid1.png) 
 
