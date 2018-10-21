@@ -23,6 +23,8 @@ Le principal inconvénient de ce mode RAID est sa sensibilité aux défaillances
 
 *RAID 1*
 
+On parle de disque en mirroir pour décire le mode 1. En effet, dans ce mode les disques du système de stockage contiennent exactement les même données. Une telle grappe constituée *n* disques tolère donc la perte de *n*-1 disques. Ce mode offre ddonc un très bons niveau de fiabilité. En contrepartie, l'espace de stockage utilisable ne correspond qu'à celui d'un disque et donc cette solution est relativement coûteuse, au regard de la capacité disponible.
+
 ## Modes « composites »
 
 ![](figures/raid0p1.png) 
