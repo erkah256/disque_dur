@@ -33,18 +33,22 @@ Il est possible de combiner les modes précédents afin d'atteindre une augmenta
 
 *RAID 0+1*
 
-Dans le mode 0+1, on dispose de *m* grappes RAID 0 consituées chacune de *n* disques, et placées sous la supervision d'un contrôleur RAID 1. Les débits sont multipliés par *m* tandis que la perte de la grappe est causée par la perte d'au moins un disque dans chacune des *m* grappes RAID 0. L'espace de stockage visible par l'utilisateur correspond à celui d'une grappe RAID 0, c'est à dire le contenu de *n* disques.
+Dans le mode 0+1, on dispose de *m* grappes RAID 0 consituées chacune de *n* disques. Un contrôleur RAID 1 chapeaute ces grappes. Les débits sont multipliés par *n* tandis que la perte de la grappe est causée par la perte d'au moins un disque dans chacune des *m* grappes RAID 0. L'espace de stockage visible par l'utilisateur correspond à celui d'une grappe RAID 0, c'est à dire le contenu de *n* disques.
 
 ![](figures/raid1p0.png) 
 
 *RAID 1+0*
 
-
+Le mode 1+0 correspond à l'utilisation de *m* grappes RAID 1 de *n* disques chacune, et placées sous la supervision d'un contrôleur RAID 0. Pour obtenir un défaut global, il est nécessaire que tous les éléments d'une grappe soient défectueux.
+Les débits sont multpliés par *m* et la taille des données stockables correspond à celle de *m* disques.
 
 
 ## Un compromis : RAID 5
 
 ![](figures/raid5.png) 
 
-
 *RAID 5*
+
+Le RAID 5 permet d'atteindre un certain compromis sur les aspects fiabilité et performances pour des coûts raisonnables. Ce mode reprend le principe des bandes du RAID 0, en y ajoutant des bandes supplémentaires de parité.
+
+
